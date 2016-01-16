@@ -2,20 +2,55 @@
 
 /* @var $this yii\web\View */
 
-$this->title = 'My Yii Application';
+$this->title = 'Manager kategorii na Yii2';
 ?>
 <div class="site-index">
 
     <div class="jumbotron">
-        <h1>Congratulations!</h1>
+        <h1>Gratulacje, udało się odpalić</h1>
 
-        <p class="lead">You have successfully created your Yii-powered application.</p>
-
-        <p><a class="btn btn-lg btn-success" href="http://www.yiiframework.com">Get started with Yii</a></p>
+        <p>Witam.</p>
+		<p>Zalogowany użytkownik ma do dyspozycji dwa dodatkowe pozycje w menu (prawy górny narożnik)</p>
+		<ul>
+			<li><a href="/index.php?r=categories/index">Kategorie</a></li>
+			<li><a href="/index.php?r=task%2Findex">Zadania</a></li>
+		</ul>
+		<p>&nbsp;</p>
+		
+		<p>Do dyspozycji są stworzone dwa konta użytkowników:</p>
+		<ul>
+			<li>e-mail: qbasic@buziaczek.pl</li>
+			<li>user: admin</li>
+			<li>pass: admin123</li>
+		</ul>
+		<p>lub</p>
+		<ul>
+			<li>e-mail: wojtek@uniwizard.com</li>
+			<li>user: wojtek</li>
+			<li>pass: wojtek123</li>
+		</ul>
+		<p>&nbsp;</p>
+		
+		<p>Rejestracja i logowanie jest. Podstawowe funkcjonalności są zrealizowane na pdstawowych formatkach generowanych przez Gii.</p>
+		<ul>
+			<li>Logowanie</li>
+			<li>Rejestracja</li>
+			<li>Zarządzenia kategoriami (dodawanie, usuwanie, edycja)</li>
+			<li>Dodawanie/usuwanie/edycja zadań</li>
+			<li>Oznaczanie zadań jako wykonanych</li>
+		</ul>
+		<p>mam nadzieje, że o to chodziło.</p>
     </div>
 
     <div class="body-content">
-
+		<div class="row">
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+			<p>&nbsp;</p>
+		</div>
         <div class="row">
             <div class="col-lg-4">
                 <h2>Heading</h2>
