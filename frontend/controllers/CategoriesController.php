@@ -7,6 +7,7 @@ use app\models\CategoriesSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\filters\AccessControl;
 
 /**
  * CategoriesController implements the CRUD actions for Categories model.
@@ -21,6 +22,16 @@ class CategoriesController extends Controller
                 'actions' => [
                     'delete' => ['post'],
                 ],
+            ],
+            'access' => [
+                'class' => AccessControl::className(),
+                'rules' => [
+                    [
+                        'allow' => true, 
+                        'actions' => ['index', 'create', 'delete', 'update', 'view', 'status'], 
+                        'roles' => ['@']
+                    ]
+                ]
             ],
         ];
     }
